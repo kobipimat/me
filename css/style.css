@@ -1,0 +1,33 @@
+body
+{
+	background-image:url(images/background.jpg);
+	background-origin:content-box;
+}
+
+p
+{
+	padding-left:12cm;
+	color: white;
+	font-size:30px;
+	text-align: left;
+}
+
+.p1
+{
+	padding-left:5cm;
+	width: 600px;
+	height: 200px;
+	background-image: url(images/kobi.jpg);
+	background-size:200px 200px;
+	background-repeat:no-repeat;
+	background-position:right;
+	
+}
+
+.titles
+{
+	color: black;
+	font-family: Comic Sans MS;
+	font-size: 50px;
+	text-align: center;
+}
