@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>about me</title>
+        <script type="text/javascript" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.transit.min.js"></script>
+        <script type="text/javascript" src="src/jquery.textanimation.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+    <body>
+	
+
+        <h1>A Little Bit About Me...</h1>
+
+        <div id="demo_jump1" class="font" >Hello... my name is Kobi</div>
+		<div id="demo_jump1" class="font" >I am a practical engineer</div>
+
+        <script type="text/javascript">
+$(document.body).ready(function(){
+	$("div#demo_step2").textAnimation({
+	    mode:"step",
+	    minsize:20,            //minimum font size[integer]
+	    maxsize:60,            //maximum font size[integer]
+	    upper:false,           //is upper step? [boolean]
+	    fixed:"top",           //which fixed top or bottom ["top","bottom"]
+	    stuff:2.2,             //font stuff quantity[float]
+	    delay:200,             //delay for between charactors animation
+	    interval:60000,            //interval for between animation
+	    duration:1000          //animation duration
+	});
+  	$("div#demo_jump1").textAnimation({
+	    mode:"jump",
+		interval:1800
+	});
+	$("div#demo_jump2").textAnimation({
+	    mode:"jump",         
+	    altitude:10,              //jump altitude[integer] 
+	    bound :false,             //bound animation[boolean]
+        fixed:"bottom",           //which fixed top or bottom ["top","bottom"]
+	    delay:80,                 //delay time for animation between characters[integer] 
+	    interval:0,               //interval time for between animation[integer]
+	    duration:400              //animation duration time[integer]
+	});
+});
+        </script>
+    </body>
+</html>

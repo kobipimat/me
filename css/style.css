@@ -1,33 +1,85 @@
-body
-{
-	background-image:url(images/background.jpg);
-	background-origin:content-box;
-}
 
-p
+section
 {
-	padding-left:12cm;
-	color: white;
-	font-size:30px;
-	text-align: left;
+	//border: #CCD1DB 1px solid;
+	position: relative;
 }
-
-.p1
+a
 {
-	padding-left:5cm;
-	width: 600px;
-	height: 200px;
-	background-image: url(images/kobi.jpg);
-	background-size:200px 200px;
-	background-repeat:no-repeat;
-	background-position:right;
-	
-}
-
-.titles
-{
-	color: black;
+	text-decoration:  none;
+	width:80px;
+	text-align:center;
 	font-family: Comic Sans MS;
-	font-size: 50px;
-	text-align: center;
+	font-size :28px;
+	color:#008AE6;
 }
+.font
+{
+	text-decoration:  none;
+	width:80px;
+	text-align:center;
+	font-family: Comic Sans MS;
+	font-size :28px;
+	color:#008AE6;
+}
+
+article
+{
+	background-image:url(../images/background.jpg);
+	background-repeat:no-repeat;
+	background-size: contain;
+	//border: #FF00FF 2px solid;
+	width:1200px;
+	height:800px;
+	margin: 0 auto;
+}
+.position1
+{
+	top: 100px;
+	left:100px;
+}
+.position2
+{
+	top: 300px;
+	left:950px;
+}
+
+.position3
+{
+	top: 450px;
+	left:500px;
+}
+
+.label
+{
+	width:80px;
+	text-align:center;
+	font-family: Comic Sans MS;
+	font-size :28px;
+	color:#008AE6;
+}
+
+// Create an ID
+.demo-container {
+	width:80px;
+	position:absolute;
+	left:150%;
+	top:130px;
+}
+
+.drop1-child {
+	width:60px;
+	height:90px;
+	background-image:url(../images/water-drop-clear.png);
+	position:absolute;
+	left:1px;
+	top:0px;
+}
+
+.drop1-parent {
+	width:60px;
+	height:10px;
+	//background-image:url(pendulum.png);
+	display:none;
+}
+
