@@ -6,44 +6,54 @@
         <script type="text/javascript" src="lib/jquery.min.js"></script>
         <script type="text/javascript" src="lib/jquery.transit.min.js"></script>
         <script type="text/javascript" src="src/jquery.textanimation.js"></script>
-		<link rel="stylesheet" href="css/style.css" />
-        
+		<link rel="stylesheet" href="css/style.css" /> 
+			<script type="text/javascript">
+				$(document.body).ready(function(){
+					$("div#demo_step2").textAnimation({
+						mode:"step",
+						minsize:20,            //minimum font size[integer]
+						maxsize:60,            //maximum font size[integer]
+						upper:false,           //is upper step? [boolean]
+						fixed:"top",           //which fixed top or bottom ["top","bottom"]
+						stuff:2.2,             //font stuff quantity[float]
+						delay:200,             //delay for between charactors animation
+						interval:60000,        //interval for between animation
+						duration:1000          //animation duration
+					});
+					$("div#jump").textAnimation({
+						mode:"jump",
+						delay:50,
+						interval:60000
+						
+					});
+					$("div#demo_jump2").textAnimation({
+						mode:"jump",         
+						altitude:10,              //jump altitude[integer] 
+						bound :false,             //bound animation[boolean]
+						fixed:"bottom",           //which fixed top or bottom ["top","bottom"]
+						delay:80,                 //delay time for animation between characters[integer] 
+						interval:0,               //interval time for between animation[integer]
+						duration:400              //animation duration time[integer]
+					});
+				});
+			</script>		
     </head>
     <body>
-	
-
-        <h1>A Little Bit About Me...</h1>
-
-        <div id="demo_jump1" class="font" >Hello... my name is Kobi</div>
-		<div id="demo_jump1" class="font" >I am a practical engineer</div>
-
-        <script type="text/javascript">
-$(document.body).ready(function(){
-	$("div#demo_step2").textAnimation({
-	    mode:"step",
-	    minsize:20,            //minimum font size[integer]
-	    maxsize:60,            //maximum font size[integer]
-	    upper:false,           //is upper step? [boolean]
-	    fixed:"top",           //which fixed top or bottom ["top","bottom"]
-	    stuff:2.2,             //font stuff quantity[float]
-	    delay:200,             //delay for between charactors animation
-	    interval:60000,            //interval for between animation
-	    duration:1000          //animation duration
-	});
-  	$("div#demo_jump1").textAnimation({
-	    mode:"jump",
-		interval:1800
-	});
-	$("div#demo_jump2").textAnimation({
-	    mode:"jump",         
-	    altitude:10,              //jump altitude[integer] 
-	    bound :false,             //bound animation[boolean]
-        fixed:"bottom",           //which fixed top or bottom ["top","bottom"]
-	    delay:80,                 //delay time for animation between characters[integer] 
-	    interval:0,               //interval time for between animation[integer]
-	    duration:400              //animation duration time[integer]
-	});
-});
-        </script>
+		<article class="clear-background">
+			<h1 class="font">A Little Bit About Me...</h1>
+			<div id="jump" class="font" >Hello... my name is Kobi</div>
+			<div id="jump" class="font" >I am a practical engineer and senior software engineer.</div>
+			<div id="jump" class="font" >I live in Modi'in for half a year but lived my all life</div>
+			<div id="jump" class="font" >in Rishon Le Zion.</div>
+			<div id="jump" class="font" >I work for INTEL as a Specialist Manufacturing</div>
+			<div id="jump" class="font" >I am almost 35 years old, but that soon going to be changed</div>
+			
+			<div id="jump" class="font" ></div>
+		</article>		
+		<div>
+            <span class="reference">
+				<a href="index.html">HOMEPAGE</a>
+            </span>
+		</div>
     </body>
 </html>
