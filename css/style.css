@@ -1,7 +1,6 @@
-
 section
 {
-	//border: #CCD1DB 1px solid;
+	border: #CCD1DB 1px solid;
 	position: relative;
 }
 a
@@ -28,10 +27,15 @@ article
 	background-image:url(../images/background.jpg);
 	background-repeat:no-repeat;
 	background-size: contain;
+	border: #CCD1DB 1px solid;
 	//border: #FF00FF 2px solid;
 	width:1200px;
 	height:800px;
 	margin: 0 auto;
+}
+
+.clear-background{
+background-image: none;
 }
 .position1
 {
@@ -59,7 +63,6 @@ article
 	color:#008AE6;
 }
 
-// Create an ID
 .demo-container {
 	width:80px;
 	position:absolute;
